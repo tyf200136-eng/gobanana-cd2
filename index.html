@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GoBanana — CD Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&family=Courier+Prime:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Caveat:wght@600&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="2"/></filter>
+  <pattern id="dots" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="2.5" cy="2.5" r="1.5" fill="#0B0B0B"/></pattern>
+  <pattern id="dots2" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="2.5" cy="2.5" r="2.2" fill="#0B0B0B"/></pattern>
+  <symbol id="casesk" viewBox="0 0 100 100">
+    <rect class="fill" x="1" y="1" width="98" height="98" rx="2.5" fill="rgba(244,244,244,.025)"/>
+    <g fill="none" stroke="#F4F4F4" stroke-opacity=".5" stroke-width=".35" vector-effect="non-scaling-stroke">
+      <rect x="1" y="1" width="98" height="98" rx="2.5"/><rect x="2.5" y="2.5" width="95" height="95" rx="2"/>
+      <path d="M8 1.5V98.5M9.5 1.5V98.5"/>
+      <circle cx="53" cy="50" r="44"/><circle cx="53" cy="50" r="10"/><circle cx="53" cy="50" r="6.5"/>
+      <path d="M14 8a6 6 0 0 1 12 0M80 8a6 6 0 0 1 12 0M14 92a6 6 0 0 0 12 0M80 92a6 6 0 0 0 12 0"/>
+      <path d="M53 40v-3M53 60v3M43 50h-3M63 50h3M46 43l-2-2M60 57l2 2M46 57l-2 2M60 43l2-2"/>
+      <path d="M3 30h4M3 70h4"/>
+    </g>
+  </symbol>
+</svg>
+<div class="grain"></div>
+
+<!-- 1 · HERO -->
+<section class="hero dark xerox" id="s1" data-i="0">
+  <div class="top">
+    <a class="logo" href="#s1" aria-label="GoBanana">GoBanana<s></s></a>
+    <div style="display:flex;gap:10px;align-items:center"><nav><a href="#s2" data-t="n1">Services</a><a href="#work" data-t="n6">Work</a><a href="#s4" data-t="n2">Space</a><a href="#s3" data-t="n3">Models</a><a href="#s5" data-t="n5">Packages</a></nav><button class="lang" id="lang">ع</button><a class="cta" href="#s6">LET'S CREATE →</a></div>
+  </div>
+  <div class="case" id="hcase"><svg><use href="#casesk"/></svg></div>
+  <div class="cd" id="hcd"><div class="base"></div><div class="rot" id="hrot"><div class="print"><b>GoBanana<s></s></b><small>Creative agency</small></div><div class="trk" id="htrk">01 · Created to create</div></div><div class="rain"></div><div class="gloss"></div></div>
+  <div class="sticker" id="stk">Side A · 2026</div>
+  <div class="hcopy">
+    <h1 class="big rough"><span><i>Go</i></span><span><i>Banana<s></s></i></span></h1>
+    <div class="tagl fade"><span class="mono">Creative advertising agency · Created to create</span><span class="ar">وكالة إعلانية وإبداعية</span></div>
+    <p class="lead fade" data-t="lead">We turn bold ideas into brands, campaigns and content that move people.</p>
+    <div class="btns fade"><a class="cta" href="#s6">LET'S CREATE →</a><a class="ghost" href="#s4" data-t="book">Book the space</a></div>
+  </div>
+  <p class="load mono" data-t="load">Reading disc…</p>
+</section>
+
+<!-- 2 · TRACKLIST (back insert) -->
+<section class="paper xerox" id="s2" data-i="1">
+  <div class="tl">
+    <div class="side"><div class="cd"><div class="base"></div><div class="rot spin"><div class="print"><b>GoBanana<s></s></b><small>Creative agency</small></div><div class="trk" id="tltrk">Side A</div></div><div class="rain"></div><div class="gloss"></div></div></div>
+    <div class="insert">
+      <div class="spine">GoBanana — Created to create</div>
+      <div class="inner">
+        <div class="sec-h"><h2 class="big">Track<br>list.</h2><span class="mono" data-t="tl">Our services — pick a track</span></div>
+        <div id="rows"></div>
+        <div class="legal"><span>℗ © 2026 GoBanana<br>Riyadh · All rights reserved</span><span class="bar" id="bar" aria-hidden="true"></span></div>
+      </div>
+      <div class="spine">GoBanana — Created to create</div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · SELECTED WORK (crate) -->
+<section class="dark xerox works" id="work" data-i="2">
+  <div class="wstage" id="wstage">
+    <div class="winfo">
+      <h2 class="big">Selected<br>work.</h2>
+      <div class="np" aria-live="polite">
+        <span class="mono" data-t="wnp">Now playing</span>
+        <div class="num" id="wnum">01</div>
+        <b id="wtitle">—</b>
+        <span class="mono" id="wmeta">—</span>
+        <button class="cta open" id="wopen" data-t="wopen">Open the booklet →</button>
+      </div>
+    </div>
+    <div class="crate" id="crate"><div class="crate3d" id="crate3d"></div></div>
+    <div class="wdots" id="wdots"></div>
+  </div>
+</section>
+
+<!-- 4 · SPACE -->
+<section class="paper xerox space" id="s4" data-i="3">
+  <div class="huge big rough">The Space</div>
+  <div class="front">
+    <svg viewBox="0 0 520 300" fill="none" stroke="#0B0B0B" stroke-width="2" aria-hidden="true">
+      <path d="M20 40 H500 V200 Q500 270 430 270 H20"/><path d="M20 270 H500" stroke-dasharray="4 6" opacity=".5"/>
+      <rect x="60" y="70" width="70" height="90" fill="url(#dots)"/><path d="M95 160 V250 M70 250 L95 230 L120 250"/>
+      <rect x="390" y="60" width="80" height="100" fill="url(#dots)"/><path d="M430 160 V250 M405 250 L430 230 L455 250"/>
+      <rect x="235" y="150" width="50" height="34" rx="4" fill="url(#dots2)"/><circle cx="260" cy="167" r="10" fill="#F4F4F4"/><path d="M260 184 V250 M238 250 L260 226 L282 250"/>
+      <path d="M200 110 l18 -30 h84 l18 30" opacity=".6"/>
+    </svg>
+    <div class="chips mono"><span data-t="c1">Cyclorama</span><span data-t="c2">Lighting kit</span><span data-t="c3">3D walkthrough soon</span></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center"><a class="cta" href="#s6" data-t="slot">Book a slot →</a><a class="ghost" href="#s4" data-t="tour">Take the tour</a></div>
+  </div>
+</section>
+
+<!-- 3 · MODELS -->
+<section class="dark xerox models" id="s3" data-i="4">
+  <div class="sec-h"><h2 class="big">The<br>Models.</h2><span class="mono" data-t="mh">Hover a case · book the face</span></div>
+  <div class="shelf" id="shelf"></div>
+</section>
+
+<!-- 5 · PACKAGES -->
+<section class="paper xerox packs" id="s5" data-i="5">
+  <div class="sec-h"><h2 class="big">Pick your<br>package.</h2><span class="mono" data-t="ph">Essential · Pro · Signature</span></div>
+  <div class="packgrid" id="packs"></div>
+</section>
+
+<!-- 6 · FINALE -->
+<section class="dark xerox fin" id="s6" data-i="6">
+  <span class="mono" style="color:var(--dim)" data-t="fin">Last track — your turn</span>
+  <div class="big rough">Let's<br><em>create.</em></div>
+  <div><a class="cta" href="#s6">LET'S CREATE →</a></div>
+  <div class="bottom mono"><span class="logo" style="font-size:20px;text-transform:none;letter-spacing:-.04em;color:var(--white)">GoBanana<s style="height:22px"></s></span><span>Go beyond ordinary.</span><span data-t="note">Preview · sample copy, models and packages</span></div>
+</section>
+
+<!-- BOOKLET -->
+<div class="bkw" id="bkw" hidden role="dialog" aria-modal="true" aria-label="Project booklet">
+  <div class="bkbg" id="bkbg"></div>
+  <button class="bkx" id="bkx" aria-label="Close">✕</button>
+  <div class="bk" id="bk">
+    <div class="pg" id="bkpg"></div>
+    <div class="fr"><div class="face" id="bkface"></div><div class="back" id="bkback"></div></div>
+  </div>
+</div>
+
+<!-- DISCMAN -->
+<div class="player" id="player">
+  <div class="prog"><i id="pbar"></i></div>
+  <div class="lcd"><div class="tr"><small>TRACK</small><span id="trn">01</span></div><div><div class="mq"><span id="mq">CREATED TO CREATE — GOBANANA</span></div><div class="tm" id="time">0:00 / 3:24</div></div></div>
+  <div class="ctrl">
+    <button class="prev" id="prev" aria-label="Previous"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M3 2h2v12H3zM14 2v12L6 8z"/></svg></button>
+    <button class="pp" id="pp" aria-label="Play / pause"><svg id="ppi" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2h3v12H4zM9 2h3v12H9z"/></svg></button>
+    <button class="next" id="next" aria-label="Next"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M11 2h2v12h-2zM2 2v12l8-6z"/></svg></button>
+    <button class="snd" id="snd" aria-label="Disc sound"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h3l4-3v10l-4-3H3z" fill="currentColor"/><path d="M13 6c1.2 1.6 1.2 4.4 0 6M15 4c2.2 2.8 2.2 7.2 0 10"/></svg></button>
+  </div>
+  <div class="nx"><div><small data-t="un">Up next</small><strong id="nxt">Tracklist</strong></div></div>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
